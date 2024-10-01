@@ -236,7 +236,7 @@ public class Trabalho_Final {
                             break;//break case 1 do switch qualoperador
 
                         case "2":
-                            
+
                             Metodos_Calculadora sub = new Metodos_Calculadora(); //INICIANDO O METODO DA SUBTRAÇÃO
                             num1 = JOptionPane.showInputDialog("DIGITE O PRIMEIRO NUMERO DA SUBTRAÇÃO");
                             num2 = JOptionPane.showInputDialog("DIGITE O SEGUNDO NUMERO DA SUBTRAÇÃO");
@@ -244,10 +244,9 @@ public class Trabalho_Final {
                             resultDouble = Double.parseDouble(resultado); //CONVERTENDO O VALOR DE STRING PARA DOUBLE
                             JOptionPane.showMessageDialog(null, "O RESULTADO DA SUBTRAÇÃO É " + resultDouble);
                             break;//break do case 2 do switch qualoperador
-                         
-                            
+
                         case "3":
-                            
+
                             Metodos_Calculadora div = new Metodos_Calculadora(); //INICIANDO O METODO DA DIVISÃO
                             num1 = JOptionPane.showInputDialog("DIGITE O DIVIDENDO DA DIVISÃO");
                             num2 = JOptionPane.showInputDialog("DIGITE O DIVISOR DA DIVISÃO");
@@ -255,9 +254,9 @@ public class Trabalho_Final {
                             resultDouble = Double.parseDouble(resultado); //CONVERTENDO O VALOR DE STRING PARA DOUBLE
                             JOptionPane.showMessageDialog(null, "O RESULTADO DA DIVISÃO É " + resultDouble);
                             break;//break do case 3 do switch qualoperador    
-                        
-                         case "4":
-                            
+
+                        case "4":
+
                             Metodos_Calculadora mult = new Metodos_Calculadora(); //INICIANDO O METODO DA MULTIPLICAÇÃO
                             num1 = JOptionPane.showInputDialog("DIGITE O DIVIDENDO DA MULTIPLICAÇÃO");
                             num2 = JOptionPane.showInputDialog("DIGITE O DIVISOR DA MULTIPLICAÇÃO");
@@ -265,51 +264,70 @@ public class Trabalho_Final {
                             resultDouble = Double.parseDouble(resultado); //CONVERTENDO O VALOR DE STRING PARA DOUBLE
                             JOptionPane.showMessageDialog(null, "O RESULTADO DA MULTIPLICAÇÃO É " + resultDouble);
                             break;//break do case 3 do switch qualoperador    
-                        
-                        
-                        
-                        
-                        
+
                         default: //default do Switch qualoperrador
                             JOptionPane.showMessageDialog(null, "ERROR!!! DIGITE UM VALOR VALIDO");
                             break; // break default
                     }//fim switch qualoperador
                     break;//break do case 2 do primeiro switch
-                    
-                case "3":    
-                    String quantpessoas,refri,cerveja,suco;
-                    double carneboi,carneporco,asinha,linguica=0.0;
-                    double quantsuco,quantrefri,quantcerveja=0.0;
-                    double totalboi,totalporco,totalasinha,totalliguica=0.0;
-                    quantpessoas= JOptionPane.showInputDialog("PARA CALCULAR OS GASTOS, PRECISO SABER QUANTAS PESSOAS IRÃO PARTICIPAR NO CHURRASCO");
-                    refri= JOptionPane.showInputDialog("DAS "+quantpessoas+" PESSOAS QUANTAS VÃO BEBER REFRIGERANTE?");
-                    suco= JOptionPane.showInputDialog("DAS "+quantpessoas+" PESSOAS QUANTAS VÃO BEBER SUCO?");
-                    cerveja= JOptionPane.showInputDialog("DAS "+quantpessoas+" PESSOAS QUANTAS VÃO BEBER CERVEJA?");
-                    double refriDouble= Double.parseDouble(refri);
-                    double cervejaDouble=Double.parseDouble(cerveja);
-                    double sucoDouble=Double.parseDouble(suco);
-                    double quantpessoasDouble=Double.parseDouble(quantpessoas);
-                    quantsuco = (sucoDouble*250)/1000;
-                    quantrefri = (refriDouble*500)/1000;
-                    quantcerveja = (cervejaDouble*3000)/1000;
-                    carneboi=(150*quantpessoasDouble)/1000;
-                    carneporco=(80*quantpessoasDouble)/1000;
-                    asinha=(100*quantpessoasDouble)/1000;
-                    linguica=(80*quantpessoasDouble)/1000;
-                    totalboi=(carneboi*40.00);
-                    totalporco=(carneporco*30.00);
-                    totalasinha=(asinha*20.00);
-                    totalliguica=(linguica*15.00);
-                    double total=totalasinha+totalboi+totalporco+totalliguica;
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    JOptionPane.showMessageDialog(null,quantpessoasDouble+" PESSOAS IRÃO PARTICIPAR DO CHURRASCO. \n\n"+cerveja+" PESSOAS IRÃO BEBER CERVEJA. \n"+suco+" PESSOAS IRÃO BEBER SUCO. \n"+refri+" PESSOAS IRÃO BEBER REFRIGERANTES.\n\n QUANTIDADE DE BEBIDAS:\n\n CERVEJA: "+quantcerveja+" L\n\n SUCO: "+quantsuco+" L\n\n REFRIGERANTES: "+quantrefri+" L \n\n QUANTIDADE DE COMIDA E PREÇO \n\n CARNE DE BOI: R$"+totalboi+" \n CARNE DE PORCO: R$"+totalporco+" \n ASINHA: R$"+totalasinha+"\n LINGUIÇA: R$"+totalliguica+" \n\n VALOR TOTAL EM COMIDA: \n R$"+total
+
+                case "3":
+
+                    String quantpessoas,
+                     refri,
+                     cerveja,
+                     suco;
+                    double carneboi,
+                     carneporco,
+                     asinha,
+                     linguica = 0.0;
+                    double quantsuco,
+                     quantrefri,
+                     quantcerveja = 0.0;
+                    double totalboi,
+                     totalporco,
+                     totalasinha,
+                     totalliguica = 0.0;
+                    quantpessoas = JOptionPane.showInputDialog("PARA CALCULAR OS GASTOS, PRECISO SABER QUANTAS PESSOAS IRÃO PARTICIPAR NO CHURRASCO");
+                    refri = JOptionPane.showInputDialog("DAS " + quantpessoas + " PESSOAS QUANTAS VÃO BEBER REFRIGERANTE?");
+                    suco = JOptionPane.showInputDialog("DAS " + quantpessoas + " PESSOAS QUANTAS VÃO BEBER SUCO?");
+                    cerveja = JOptionPane.showInputDialog("DAS " + quantpessoas + " PESSOAS QUANTAS VÃO BEBER CERVEJA?");
+                    double refriDouble = Double.parseDouble(refri);
+                    double cervejaDouble = Double.parseDouble(cerveja);
+                    double sucoDouble = Double.parseDouble(suco);
+                    double quantpessoasDouble = Double.parseDouble(quantpessoas);
+                    quantsuco = (sucoDouble * 250) / 1000;
+                    quantrefri = (refriDouble * 500) / 1000;
+                    quantcerveja = (cervejaDouble * 3000) / 1000;
+                    carneboi = (150 * quantpessoasDouble) / 1000;
+                    carneporco = (80 * quantpessoasDouble) / 1000;
+                    asinha = (100 * quantpessoasDouble) / 1000;
+                    linguica = (80 * quantpessoasDouble) / 1000;
+                    totalboi = (carneboi * 40.00);
+                    totalporco = (carneporco * 30.00);
+                    totalasinha = (asinha * 20.00);
+                    totalliguica = (linguica * 15.00);
+                    double total = totalasinha + totalboi + totalporco + totalliguica;
+
+                    JOptionPane.showMessageDialog(null,
+                            quantpessoasDouble + " PESSOAS IRÃO PARTICIPAR DO CHURRASCO.\n\n"
+                            + cerveja + " PESSOAS IRÃO BEBER CERVEJA.\n"
+                            + suco + " PESSOAS IRÃO BEBER SUCO.\n"
+                            + refri + " PESSOAS IRÃO BEBER REFRIGERANTES.\n\n"
+                            + "QUANTIDADE DE BEBIDAS:\n\n"
+                            + "CERVEJA:      " + quantcerveja + " L\n"
+                            + "SUCO:         " + quantsuco + " L\n"
+                            + "REFRIGERANTES:" + quantrefri + " L\n\n"
+                            + "QUANTIDADE DE COMIDA E PREÇO:\n\n"
+                            + "     ITEM                              KG               R$                 \n"
+                            + "----------------------------------------------------------------------------\n"
+                            + "CARNE DE BOI:                " + carneboi + "              " + totalboi + "\n"
+                            + "CARNE DE PORCO:         " + carneporco + "              " + totalporco + "\n"
+                            + "ASINHA:                             " + asinha + "              " + totalasinha + "\n"
+                            + "LINGUIÇA:                          " + linguica + "              " + totalliguica + "\n\n"
+                            + "VALOR TOTAL EM COMIDA:\n R$" + total
                     );
+                   
                     break; //break do case 3 do primeiro switch
                 default://PRIMEIRO SWITCH
                     JOptionPane.showMessageDialog(null, "DIGITE UM VALOR VALIDO!!!");
